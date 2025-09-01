@@ -1,0 +1,156 @@
+#include <stdio.h>
+void error(){
+    printf("Tanggal tidak valid");
+}
+
+int main(){
+    int bulan, tanggal;
+    
+    printf("Masukkan bulan berapa :");
+    scanf("%d", &bulan);
+
+    printf("Masukkan tanggal :");
+    scanf("%d", &tanggal);
+
+    if (bulan==1){
+        if (tanggal>=1 && tanggal<=19){
+            printf("Zodiac : Capricorn");
+        }
+        else if (tanggal>=20 && tanggal<=31){
+            printf("Zodiac : Aquarius");
+        }
+        else {
+            error();
+        }
+    }
+    else if (bulan==2){
+        if (tanggal>=1 && tanggal<=18){
+            printf("Zodiac : Aquarius");
+        }
+        else if (tanggal>=19 && tanggal<=28){
+            printf("Zodiac : Pisces");
+        }
+        else {
+            error();
+        }
+    }
+    else if (bulan==3){
+        if (tanggal>=1 && tanggal<=20){
+            printf("Zodiac : Pisces");
+        }
+        else if (tanggal>=21 && tanggal<=31){
+            printf("Zodiac : Aries");
+        }
+        else {
+            error();
+        }
+    }
+    else if (bulan==4){
+        if (tanggal>=1 && tanggal<=19){
+            printf("Zodiac : Aries");
+        }
+        else if (tanggal>=20 && tanggal<=30){
+            printf("Zodiac : Taurus");
+        }
+        else {
+            error();
+        }
+    }
+    else if (bulan==5){
+        if (tanggal>=1 && tanggal<=20){
+            printf("Zodiac : Taurus");
+        }
+        else if (tanggal>=21 && tanggal<=31){
+            printf("Zodiac : Gemini");
+        }
+        else {
+            error();
+        }
+    }
+    else if (bulan==6){
+        if (tanggal>=1 && tanggal<=20){
+            printf("Zodiac : Gemini");
+        }
+        else if (tanggal>=21 && tanggal<=30){
+            printf("Zodiac : Cancer");
+        }
+        else {
+            error();
+        }
+    }
+    else if (bulan==7){
+        if (tanggal>=1 && tanggal<=22){
+            printf("Zodiac : Cancer");
+        }
+        else if (tanggal>=23 && tanggal<=31){
+            printf("Zodiac : Leo");
+        }
+        else {
+            error();
+        }
+    }
+    else if (bulan==8){
+        if (tanggal>=1 && tanggal<=22){
+            printf("Zodiac : Leo");
+        }
+        else if (tanggal>=23 && tanggal<=31){
+            printf("Zodiac : Virgo");
+        }
+        else {
+            error();
+        }
+    }
+    else if (bulan==9){
+        if (tanggal>=1 && tanggal<=22){
+            printf("Zodiac : Virgo");
+        }
+        else if (tanggal>=23 && tanggal<=30){
+            printf("Zodiac : Libra");
+        }
+        else {
+            error();
+        }
+    }
+    else if (bulan==10){
+        if (tanggal>=1 && tanggal<=22){
+            printf("Zodiac : Libra");
+        }
+        else if (tanggal>=23 && tanggal<=31){
+            printf("Zodiac : Scorpio");
+        }
+        else {
+            error();
+        }
+    }
+    else if (bulan==11){
+        if (tanggal>=1 && tanggal<=21){
+            printf("Zodiac : Scorpio");
+        }
+        else if (tanggal>=22 && tanggal<=30){
+            printf("Zodiac : Sagitarius");
+        }
+        else {
+            error();
+        }
+    }
+    else if (bulan==12){
+        if (tanggal>=1 && tanggal<=21){
+            printf("Zodiac : Sagitarius");
+        }
+        else if (tanggal>=22 && tanggal<=31){
+            printf("Zodiac : Capricorn");
+        }
+        else {
+            error();
+        }
+    }
+    else {
+        if (tanggal<=31){
+            printf("Bulan tidak valid");
+        }
+        else {
+            printf("Bulan dan tanggal tidak valid");
+        }
+    }
+    return 0;
+}
