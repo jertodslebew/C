@@ -1,0 +1,18 @@
+#include <stdio.h>
+int main (){
+    int i, jumlahnilai;
+    float ratarata, total=0, nilai;
+
+    printf("Masukkan jumlah nilai yang ingin dirata-rata:");
+    scanf("%d", &jumlahnilai);
+
+    for(i=1; i<=jumlahnilai; i++) {
+        printf("Masukkan nilai ke-%d:", i);
+        scanf("%f", &nilai );
+        total=total+nilai;
+    }
+
+    ratarata=total/jumlahnilai;
+    printf("Rata-rata:%.2f", ratarata);
+    return 0;
+}
