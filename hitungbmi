@@ -1,0 +1,34 @@
+#include <stdio.h>
+    float beratbadan, tinggibadan;
+    float bmi, tinggibadan2, tinggibadankonversi;
+
+void selesai(){
+    printf("BMI : %.2lf", bmi);
+}
+
+int main(){
+    printf("Selamat datang di program menghitung BMI");
+    printf("\nMasukkan berat badan anda :");
+    scanf("%f", &beratbadan);
+    printf("Masukkan tinggi badan anda :");
+    scanf("%f", &tinggibadan);
+
+    tinggibadankonversi=tinggibadan/100;
+    tinggibadan2=tinggibadankonversi*tinggibadankonversi;
+    bmi=beratbadan/tinggibadan2;
+
+    if (bmi<18.5){
+        selesai();
+        printf("\nUnderweight");
+    }
+    else if (bmi>=18.5 && bmi<25){
+        selesai();
+        printf("\nNormal weight");
+    }
+    else if (bmi>=25 && bmi<30){
+        selesai();
+        printf("\nOverweight");
+    }
+    return 0;
+    
+}
