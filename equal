@@ -1,0 +1,25 @@
+#include <stdio.h>
+int main(){
+    int a, b;
+
+    printf("Please enter first number :");
+    scanf("%d", &a);
+    
+    printf("Please enter second number :");
+    scanf("%d", &b);
+
+    if (a==b){
+        printf("First number and Second number is equal");
+    }
+    else {
+        if (a>b){
+        printf("First number is bigger than the second number");
+    }
+        else {
+        printf("First number is smaller than the second number");
+    }
+    }
+
+    
+    
+}
