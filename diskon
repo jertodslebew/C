@@ -1,0 +1,100 @@
+#include <stdio.h>    
+    float ticket, price, hasil, result;
+    int diskon;
+void printing(){
+        printf("Hasil : %.2lf", hasil);
+    }
+
+
+int main(){
+
+    printf("MASUKKAN JUMLAH TIKET :");
+    scanf("%f", &ticket);
+
+    printf("MASUKKAN HARGA TIKET :");
+    scanf("%f", &price);
+
+    printf("MASUKKAN DISKON TIKET DALAM PERSEN :");
+    scanf("%d", &diskon);
+
+    result=ticket*price;
+    switch (diskon){
+    case 10:
+    hasil=result*0.9;
+    printing();
+        break;
+    case 20:
+    hasil=result*0.8;
+    printing();
+        break;
+    case 30:
+    hasil=result*0.7;
+    printing();
+        break;
+    case 40:
+    hasil=result*0.6;
+    printing();
+        break;
+    case 50:
+    hasil=result*0.5;
+    printing();
+        break;
+    case 60:
+    hasil=result*0.4;
+    printing();
+        break;
+    case 70:
+    hasil=result*0.3;
+    printing();
+        break;
+    case 80:
+    hasil=result*0.2;
+    printing();
+        break;
+    case 90:
+    hasil=result*0.1;
+    printing();
+        break;
+    case 5:
+    hasil=result*0.95;
+    printing();
+    case 15:
+    hasil=result*0.85;
+    printing();
+        break;
+    case 25:
+    hasil=result*0.75;
+    printing();
+        break;
+    case 35:
+    hasil=result*0.65;
+    printing();
+        break;
+    case 45:
+    hasil=result*0.55;
+    printing();
+        break;
+    case 55:
+    hasil=result*0.45;
+    printing();
+        break;
+    case 65:
+    hasil=result*0.35;
+    printing();
+        break;
+    case 75:
+    hasil=result*0.25;
+    printing();
+        break;
+    case 85:
+    hasil=result*0.15;
+    printing();
+        break;
+    case 95:
+    hasil=result*0.05;
+    printing();
+        break;
+    }
+    return 0;
+    
+}
