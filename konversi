@@ -1,0 +1,83 @@
+#include <stdio.h>
+    int awal;
+    int angkaawal;
+    int akhir;
+    int angkaakhir;
+void selesai(){
+    printf("Hasil :%d", angkaakhir);
+}
+
+int main (){
+    printf("Masukkan satuan awal yang mau dikonversi (1. Jam, 2. Menit, 3. Detik) :");
+    scanf("%d", &awal);
+
+    switch (awal){
+    case 1:
+        printf("Masukkan angka awal :");
+        scanf("%d", &angkaawal);
+
+        printf("Masukkan mau dikonversi menjadi apa (1. Menit, 2. Detik) :");
+        scanf("%d", &akhir);
+
+        switch (akhir){
+        case 1:
+            angkaakhir=angkaawal*60;
+            selesai();
+            break;
+        case 2:
+            angkaakhir=angkaawal*3600;
+            selesai();
+            break;
+        default:
+            printf("Error");
+            break;
+        }
+        break;
+    case 2:
+        printf("Masukkan angka awal :");
+        scanf("%d", &angkaawal);
+
+        printf("Masukkan mau dikonversi menjadi apa (1. Jam, 2. Detik) :");
+        scanf("%d", &akhir);
+
+        switch (akhir){
+        case 1:
+            angkaakhir=angkaawal/60;
+            selesai();
+            break;
+        case 2:
+            angkaakhir=angkaawal*60;
+            selesai();
+            break;
+        default:
+            printf("Error");
+            break;
+        }
+        break;
+    case 3:
+        printf("Masukkan angka awal :");
+        scanf("%d", &angkaawal);
+
+        printf("Masukkan mau dikonversi menjadi apa (1. Jam, 2. Menit) :");
+        scanf("%d", &akhir);
+
+         switch (akhir){
+        case 1:
+            angkaakhir=angkaawal/3600;
+            selesai();
+            break;
+        case 2:
+            angkaakhir=angkaawal/60;
+            selesai();
+            break;
+        default:
+            printf("Error");
+            break;
+         }
+        break;
+    default:
+        printf("Error");
+        break;
+    }
+    
+    }
