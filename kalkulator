@@ -1,0 +1,35 @@
+#include <stdio.h>
+
+int main (){
+   int angka1;
+   int angka2, result;
+   char operator;
+   
+    printf("MASUKAN ANGKA PERTAMA:");
+    scanf("%d", &angka1);
+
+    printf("MASUKAN OPERATOR:");
+    scanf(" %c", &operator);
+
+    printf("MASUKAN ANGKA KEDUA:");
+    scanf("%d", &angka2);
+
+    switch (operator){
+    case '+':
+        printf("Hasil:%d\n", angka1+angka2);
+        break;
+    case '-':
+        printf("Hasil:%d\n", angka1-angka2);
+        break;
+    case '*':
+        printf("Hasil:%d\n", angka1*angka2);
+        break;
+    case '/':
+        printf("Hasil:%d\n", angka1/angka2);
+        break;
+    default :
+        printf("Operator tidak valid");
+        break;
+    }
+    return 0;
+}
